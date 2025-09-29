@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-/static/css/main.2c3043b5.css",
-    "main.js": "/portfolio-/static/js/main.72590b68.js",
+    "main.js": "/portfolio-/static/js/main.c188e31a.js",
     "static/media/fotomiahalftone.png": "/portfolio-/static/media/fotomiahalftone.82d48209659b2550c60c.png",
     "index.html": "/portfolio-/index.html",
     "main.2c3043b5.css.map": "/portfolio-/static/css/main.2c3043b5.css.map",
-    "main.72590b68.js.map": "/portfolio-/static/js/main.72590b68.js.map"
+    "main.c188e31a.js.map": "/portfolio-/static/js/main.c188e31a.js.map"
   },
   "entrypoints": [
     "static/css/main.2c3043b5.css",
-    "static/js/main.72590b68.js"
+    "static/js/main.c188e31a.js"
   ]
 }
