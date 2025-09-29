@@ -1,0 +1,287 @@
+
+
+
+.linkWeb{
+  color: #00ffae;
+  text-decoration: none;
+}
+
+.spanNav{
+  color: #00ffae;
+}
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: #000; /* Fondo negro */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.logo span {
+  color: #00ffae; /* Verde tipo "matrix" */
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #d3e3d3; /* Gris claro */
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00ffae; /* Verde en hover */
+}
+
+
+
+
+
+
+
+
+
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  padding: 0 60px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 20px;
+  font-size: 26px;
+}
+
+.hero-socials a {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.hero-socials a:hover {
+  color: #1da1f2;
+}
+
+/* Imagen */
+.hero-image img {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  filter: grayscale(100%) contrast(120%);
+  image-rendering: pixelated;
+  transition: filter 0.5s;
+}
+
+.hero-image img:hover {
+  filter: grayscale(0%) contrast(100%);
+}
+
+
+/* .hero-image img {
+  animation: mover 1s ease-in-out infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+} */
+
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 60px;
+  background-color: #000;
+  color: #fff;
+  gap: 220px;
+}
+
+/* Texto a la izquierda con línea verde */
+.about-left {
+  flex: 1;
+  border-left: 2px solid #2ecc71; /* Línea verde */
+  padding-left: 25px;             /* Separación entre texto y línea */
+}
+
+.about-left h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Timeline a la derecha */
+.about-right {
+  flex: 1;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid #2ecc71;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -110px;
+  top: 0;
+  color: #2ecc71;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -39px;
+  top: 0;
+  background: #000;
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.timeline-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Animación scroll reveal */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-left {
+    border-left: none; /* Ocultamos la línea para que no quede rara en mobile */
+    padding-left: 0;
+  }
+
+  .timeline {
+    margin-top: 40px;
+  }
+
+  .timeline-date {
+    position: relative;
+    left: 0;
+    margin-bottom: 5px;
+  }
+
+  .timeline-icon {
+    left: -17px;
+  }
+}
+
+
+
+
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+  }
+}

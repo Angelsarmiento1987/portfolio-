@@ -1,0 +1,110 @@
+
+
+/* ContactSection.css */
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding: 60px;
+  min-height: 60vh;
+  background-color: black;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.services {
+  flex: 1;
+  min-width: 300px;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.services li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: #00ff99; /* verde como en la imagen */
+  border-radius: 50%;
+}
+
+.contact {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact .email {
+  color: #00ff99;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #666;
+}
+
+.iconFooter{
+  
+
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.iconFooter :hover{
+color: #1da1f2;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services,
+  .contact {
+    text-align: center;
+  }
+}
+
